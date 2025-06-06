@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gym Analyzer - Intelligent analysis platform for gym management"/>
+  <link rel="icon" href="/static/assets/logo.ico"/>
+  <title>Gym Analyzer - Intelligent Analysis for Gyms</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/styles/style.css"/>
+  <link rel="stylesheet" href="/static/styles/media-queries.css"/>
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <img src="/static/assets/logo-branca.png" alt="Gym Analyzer logo" id="logo">
+    <div id="header-buttons">
+      <a href="{{ url_for('form') }}" class="button">Start Analysis</a>
+    </div>
+  </header>
+  <main>
+    <section id="sobre-nos-content">
+      <div class="sobre-text">
+        <h1>About Us</h1>
+        <p>Gym Analyzer is a revolutionary platform that uses artificial intelligence and data analysis to transform gym management. Based on recent studies by IHRSA (International Health, Racquet & Sportsclub Association), gyms that implement data analysis see an average 30% increase in member retention and a 25% boost in operational efficiency.</p>
+        <p>Our solution provides valuable insights into attendance patterns, peak hours, and member behavior, enabling managers to make data-driven decisions to optimize resources and enhance the member experience.</p>
+      </div>
+      <img src="../static/assets/equipamento-de-ginastica-3d.jpg" alt="Modern gym equipment">
+    </section>
+
+    <section id="dados-utilizados-content">
+      <h1>Data Used</h1>
+      <p>We use a comprehensive set of gym data, including attendance information, class bookings, and equipment usage patterns. Our analysis is based on real data from Canadian gyms, processed and anonymized to ensure user privacy.</p>
+      <div class="dados">
+        <div class="dados-detalhes">
+          <img src="/static/assets/dia.jpeg" alt="Category Analysis">
+          <p class="dados_texto">Distribution of members by training category, showing the most popular exercise preferences.</p>
+        </div>
+        <div class="dados-detalhes">
+          <img src="/static/assets/horario.jpeg" alt="Peak Hours">
+          <p class="dados_texto">Analysis based on class time (AM or PM).</p>
+        </div>
+        <div class="dados-detalhes">
+          <img src="/static/assets/peso.jpeg" alt="Member Retention">
+          <p class="dados_texto">Relationship between weight and attendance probability.</p>
+        </div>
+        <div class="dados-detalhes">
+          <img src="/static/assets/meses.jpeg" alt="Equipment Usage">
+          <p class="dados_texto">Correlation between months as a member and attendance.</p>
+        </div>
+        <div class="dados-detalhes">
+          <img src="/static/assets/categoria.jpeg" alt="Growth Trends">
+          <p class="dados_texto">Attendance percentage by class type.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="./assets/logo-branca.png" alt="Gym Analyzer logo" id="logo-footer">
+      </div>
+      <div class="footer-links">
+        <a href="#sobre-nos-content">About Us</a>
+        <a href="#dados-utilizados-content">Data Used</a>
+        <a href="./analise.html">Start Analysis</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
