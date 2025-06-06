@@ -1,0 +1,117 @@
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        position: relative;
+    }
+    
+    header #header-buttons .button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+    
+    header #logo {
+        width: 80px;
+        height: auto;
+    }
+    
+    #sobre-nos-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    #sobre-nos-content p, #dados-utilizados-content p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    #sobre-nos-content h1, #dados-utilizados-content h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    #sobre-nos-content h1::after, #dados-utilizados-content h1::after {
+        width: 40px;
+    }
+    
+    #sobre-nos-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    #dados-utilizados-content {
+        padding: 30px 20px;
+    }
+    
+    #dados-utilizados-content .dados {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 0;
+    }
+    
+    #dados-utilizados-content .dados .dados-detalhes {
+        padding: 15px;
+    }
+    
+    #dados-utilizados-content .dados .dados-detalhes img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .dados_texto {
+        font-size: 16px !important;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .footer-content .footer-logo #logo-footer {
+        width: 150px;
+        height: auto;
+    }
+    
+    .footer-links {
+        gap: 10px;
+    }
+    
+    .footer-links a {
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 8px 15px;
+    }
+    
+    header #logo {
+        width: 60px;
+    }
+    
+    header #header-buttons .button {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-left: 20px;
+    }
+    
+    #sobre-nos-content, #dados-utilizados-content {
+        padding: 15px;
+    }
+    
+    #sobre-nos-content p, #dados-utilizados-content p {
+        font-size: 16px;
+    }
+    
+    #sobre-nos-content h1, #dados-utilizados-content h1 {
+        font-size: 22px;
+    }
+    
+    .footer-content .footer-logo #logo-footer {
+        width: 120px;
+    }
+}
